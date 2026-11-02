@@ -9,24 +9,23 @@ It includes:
 - Competitive Programming (CP)
 - Coding challenges from platforms like LeetCode.
 
-## Building and running projects
+## Building and running
 
-The repository contains independent C++ programs. Build one target at a time instead of compiling every `.cpp` file together:
+Build and run the C++ learning program:
 
 ```bash
-./scripts/run.sh                                 # Build and run cpp-learning
-./scripts/run.sh student-management-system       # Build and run the student app
-./scripts/run.sh student-management-system build
-./scripts/run.sh student-management-system debug
+./scripts/run.sh         # Build and run
+./scripts/run.sh build   # Build only
+./scripts/run.sh debug   # Build with debug symbols
 ./scripts/run.sh clean
 ```
 
-CMake keeps each executable's source files and include paths separate. Build outputs go under `build/cmake/`; install CMake and a C++17 compiler first. The `cpp-learning` target uses GCC because its examples include GCC's `<bits/stdc++.h>` header. The student management system can use GCC or Clang.
+The CMake target is `cpp_learning`, and build outputs go under `build/`. Install CMake and GCC with C++17 support first; some examples use GCC's `<bits/stdc++.h>` header.
 
 ## Debugging in VS Code (macOS)
 
-Install the **CodeLLDB** extension (`vadimcn.vscode-lldb`) and open this repository as the VS Code workspace. Choose **Debug cpp-learning (LLDB)** or **Debug student-management-system (LLDB)** from the Run and Debug menu. Each configuration builds only that program with debug symbols before launching it. Set breakpoints in the source files before starting the debugger.
+Install the **CodeLLDB** extension (`vadimcn.vscode-lldb`) and open this repository as the VS Code workspace. Choose **Debug cpp-learning (LLDB)** from the Run and Debug menu. The configuration builds the program with debug symbols before launching it. Set breakpoints in the source files before starting the debugger.
 
-The script prefers Homebrew GCC (`g++-16`) when available. You can also create debug builds from a terminal with `./scripts/run.sh <project> debug`.
+The script prefers Homebrew GCC (`g++-16`) when available. You can also create a debug build from a terminal with `./scripts/run.sh debug`.
 
 ---

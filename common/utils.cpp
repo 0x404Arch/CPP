@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+#include "utils.hpp"
+
 namespace Utils {
     // Swap 2 numbers utility
     void swap(int& a, int& b) {

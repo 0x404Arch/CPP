@@ -5,20 +5,10 @@
             "name": "Debug cpp-learning (LLDB)",
             "type": "lldb",
             "request": "launch",
-            "program": "${workspaceFolder}/build/cmake/cpp_learning",
+            "program": "${workspaceFolder}/build/cpp_learning",
             "args": [],
             "cwd": "${workspaceFolder}",
             "preLaunchTask": "Build cpp-learning for debugging",
-            "stopOnEntry": false
-        },
-        {
-            "name": "Debug student-management-system (LLDB)",
-            "type": "lldb",
-            "request": "launch",
-            "program": "${workspaceFolder}/build/cmake/student_management_system",
-            "args": [],
-            "cwd": "${workspaceFolder}/projects/student-management-system",
-            "preLaunchTask": "Build student-management-system for debugging",
             "stopOnEntry": false
         }
     ]

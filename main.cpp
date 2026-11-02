@@ -1,6 +1,6 @@
 #include <iostream>
 #include "dsa/arrays/arrays_.hpp"
-#include "utils/utils.hpp"
+#include "common/utils.hpp"
 
 using namespace std;
 

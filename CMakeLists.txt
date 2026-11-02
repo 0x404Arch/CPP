@@ -12,27 +12,18 @@ file(GLOB_RECURSE CPP_LEARNING_SOURCES CONFIGURE_DEPENDS
     "${CMAKE_CURRENT_SOURCE_DIR}/maths/*.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/oop/*.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/patterns/*.cpp"
-    "${CMAKE_CURRENT_SOURCE_DIR}/utils/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/common/*.cpp"
 )
 
 add_executable(cpp_learning
     "${CMAKE_CURRENT_SOURCE_DIR}/main.cpp"
     ${CPP_LEARNING_SOURCES}
 )
-target_include_directories(cpp_learning PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}")
-
-add_executable(student_management_system
-    projects/student-management-system/src/main.cpp
-    projects/student-management-system/src/app/app.cpp
-    projects/student-management-system/src/logging/logger.cpp
-    projects/student-management-system/src/models/student.cpp
-    projects/student-management-system/src/utils/generate_id.cpp
-)
-target_include_directories(student_management_system PRIVATE
-    "${CMAKE_CURRENT_SOURCE_DIR}/projects/student-management-system/src"
+target_include_directories(cpp_learning PRIVATE
+    "${CMAKE_CURRENT_SOURCE_DIR}"
+    "${CMAKE_CURRENT_SOURCE_DIR}/common"
 )
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang|AppleClang")
     target_compile_options(cpp_learning PRIVATE -Wall -Wextra)
-    target_compile_options(student_management_system PRIVATE -Wall -Wextra)
 endif()

@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
 
-#include "utils/utils.hpp"
-
 using namespace std;
 
 // Insertion sort

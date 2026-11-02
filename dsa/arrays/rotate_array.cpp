@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "utils/utils.hpp"
+#include "common/utils.hpp"
 
 using namespace std;
 
