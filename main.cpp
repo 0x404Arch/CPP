@@ -5,17 +5,16 @@
 using namespace std;
 
 int main() {
-    int arr[] = {1, 2, 4, 7, 7, 5};
-    int len = 6;
-    int n = 2;
+    int arr[] = {1, 0, 0, 2, 4};
+    int n = 9;
 
     cout << "Original Array: " << endl;
-    Utils::print_arrays(arr, len);
+    Utils::print_arrays(arr, n);
 
-    right_array(arr, len, n);
+    move_all_zeroes_to_end(arr, n);
 
-    cout << "\nRight rotated Array by " << n << " places: " << endl;
-    Utils::print_arrays(arr, len);
+    cout << "\nAfter moving zeroes: " << endl;
+    Utils::print_arrays(arr, n);
 
     return 0;
 }

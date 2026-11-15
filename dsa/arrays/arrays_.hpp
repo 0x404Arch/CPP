@@ -18,3 +18,5 @@ void left_array(int arr[], int len, int n);
 // right rotatae the array by n places
 void right_array(int arr[], int len, int n);
 
+// Move all zeroes to the end of the array
+void move_all_zeroes_to_end(int arr[], int n);
