@@ -28,3 +28,4 @@ std::vector<int> unionArray(std::vector<int>& num1, std::vector<int>& num2); // 
 std::vector<int> unionArray2(std::vector<int>& nums1, std::vector<int>& nums2); // Without Using a set
 
 // Intersection of two sorted arrays
+std::vector<int> intersectionArray(std::vector<int>& nums1, std::vector<int>& nums2);
