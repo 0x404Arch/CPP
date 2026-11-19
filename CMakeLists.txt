@@ -13,6 +13,7 @@ file(GLOB_RECURSE CPP_LEARNING_SOURCES CONFIGURE_DEPENDS
     "${CMAKE_CURRENT_SOURCE_DIR}/oop/*.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/patterns/*.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/common/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/practice/leetcode/*.cpp"
 )
 
 add_executable(cpp_learning

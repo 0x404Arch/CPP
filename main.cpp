@@ -1,15 +1,19 @@
 #include <vector>
 
-#include "dsa/arrays/arrays_.hpp"
+#include "practice/leetcode/leetcode.hpp"
 #include "common/utils.hpp"
 
 using namespace std;
 
 int main() {
-    vector<int> num1 = {1, 2, 3, 4, 5};
-    vector<int> num2 = {1, 2, 7};
 
-    vector<int> ans = intersectionArray(num1, num2);
+    vector<vector<int>> matrix = {
+        {1, 2, 3}, 
+        {4, 5, 6}, 
+        {7, 8, 9}
+    };
+
+    vector<int> ans = spiralOrder(matrix);
     Utils::print_vectors(ans);
 
     return 0;
