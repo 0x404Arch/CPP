@@ -1,3 +1,4 @@
+#include <iostream>
 #include <vector>
 
 #include "practice/leetcode/leetcode.hpp"
@@ -7,14 +8,14 @@ using namespace std;
 
 int main() {
 
-    vector<vector<int>> matrix = {
-        {1, 2, 3}, 
-        {4, 5, 6}, 
-        {7, 8, 9}
-    };
+    vector<int> nums = {2, 11, 7, 15};
+    int target = 9;
 
-    vector<int> ans = spiralOrder(matrix);
+    vector<int> ans = twoSum(nums, target);
     Utils::print_vectors(ans);
+
+    string answer = twoSum2(nums, target);
+    cout << answer << endl;
 
     return 0;
 }
