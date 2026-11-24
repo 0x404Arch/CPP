@@ -14,8 +14,6 @@ Example of Pascal Triangle
 
 */
 
-#include <iostream>
-
 using namespace std;
 
 int pascals_triangle_1(int r, int c) {
