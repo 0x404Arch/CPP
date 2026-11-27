@@ -13,6 +13,7 @@ file(GLOB_RECURSE CPP_LEARNING_SOURCES CONFIGURE_DEPENDS
     "${CMAKE_CURRENT_SOURCE_DIR}/oop/*.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/patterns/*.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/common/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/utils/*.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/practice/leetcode/*.cpp"
 )
 
@@ -21,7 +22,16 @@ add_executable(cpp_learning
     ${CPP_LEARNING_SOURCES}
     dsa/strings/strings.hpp
     dsa/strings/reverse_string.cpp
+    dsa/strings/valid_palindrome.cpp
+    utils/swap_utils.cpp
+    utils/array_utils.hpp
+    utils/array_utils.cpp
+    utils/vector_utils.hpp
+    utils/vector_utils.cpp
+    utils/string_utils.hpp
+    utils/string_utils.cpp
 )
+
 target_include_directories(cpp_learning PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}"
     "${CMAKE_CURRENT_SOURCE_DIR}/common"
