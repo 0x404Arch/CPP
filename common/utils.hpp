@@ -6,6 +6,9 @@ namespace Utils {
     // Swap 2 numbers
     void swap(int& a, int& b);
 
+    // Swap 2 characters
+    void swap(char &a, char &b);
+    
     // Print vectors
     void print_vectors(const std::vector<int>& arr);
 

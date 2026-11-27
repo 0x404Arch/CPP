@@ -19,6 +19,8 @@ file(GLOB_RECURSE CPP_LEARNING_SOURCES CONFIGURE_DEPENDS
 add_executable(cpp_learning
     "${CMAKE_CURRENT_SOURCE_DIR}/main.cpp"
     ${CPP_LEARNING_SOURCES}
+    dsa/strings/strings.hpp
+    dsa/strings/reverse_string.cpp
 )
 target_include_directories(cpp_learning PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}"

@@ -4,14 +4,22 @@
 #include "utils.hpp"
 
 namespace Utils {
-    // Swap 2 numbers utility
+    // Swap 2 numbers
     void swap(int& a, int& b) {
         int temp = a;
         a = b;
         b = temp;
     }
+
+    // Swap 2 characters
+    void swap(char &a, char &b) {
+        char temp = a;
+        a = b;
+        b = temp;
+    }
     
-    // Print vector utility
+    
+    // Print vector
     void print_vectors(const std::vector<int>& arr) {
         for (int num : arr) {
             std::cout << num << " ";
