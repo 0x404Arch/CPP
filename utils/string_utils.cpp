@@ -14,7 +14,35 @@ namespace utils {
     }
 
     // Convert string into array of characters
-    std::vector<char> s_arr (std::string& s) {
+    std::vector<char> string_to_char_arr(const std::string& s) {
+        // Copy all characters from the string into the vector
+        std::vector<char> arr(s.begin(), s.end());
+        
+        // Append a null terminator to mark the end of the C-style string
+        arr.push_back('\0');
 
+        return arr;
+    }
+
+    // To Lowercase
+    std::string to_lower(const std::string& s) {
+        std::string result = s;
+
+        for (int i = 0; i < result.length(); i++) {
+            result[i] = std::tolower(result[i]);
+        }
+
+        return result;
+    }
+
+    // To Uppercase
+    std::string to_upper(const std::string& s) {
+        std::string result = s;
+
+        for (int i = 0; i < result.length(); i++) {
+            result[i] = std::toupper(result[i]);
+        }
+
+        return result;
     }
 }

@@ -1,21 +1,22 @@
-#include <iostream>
-#include <vector>
+#include "strings/strings.hpp"
 
-#include "practice/leetcode/leetcode.hpp"
-#include "common/utils.hpp"
+#include <iostream>
+#include <string>
 
 using namespace std;
 
 int main() {
 
-    vector<int> nums = {2, 11, 7, 15};
-    int target = 9;
+    string s = "A man, a plan, a canal: Panama";
 
-    vector<int> ans = twoSum(nums, target);
-    Utils::print_vectors(ans);
+    bool ans = isPalindrome(s);
 
-    string answer = twoSum2(nums, target);
-    cout << answer << endl;
+    if (ans) {
+        cout << "True" << endl;
+    }
+    else {
+        cout << "false" << endl;
+    }
 
     return 0;
 }
