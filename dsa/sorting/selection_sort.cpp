@@ -1,7 +1,6 @@
-#include <iostream>
-#include <vector>
+#include "utils/swap_utils.hpp"
 
-#include "common/utils.hpp"
+#include <vector>
 
 using namespace std;
 
@@ -21,6 +20,6 @@ void selection_sort(vector<int>& arr) {
         }
 
         // Swap actual elements in arr
-        Utils::swap(arr[i], arr[minIndex]);
+        utils::swap(arr[i], arr[minIndex]);
     }
 }

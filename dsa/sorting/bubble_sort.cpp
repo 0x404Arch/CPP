@@ -1,7 +1,6 @@
-#include <iostream>
-#include <vector>
+#include "utils/swap_utils.hpp"
 
-#include "common/utils.hpp"
+#include <vector>
 
 using namespace std;
 
@@ -16,7 +15,7 @@ void bubble_sort(vector<int>& arr) {
         for (int j = 0; j < n - i - 1; j++) {
 
             if (arr[j] > arr[j + 1]) {
-                Utils::swap(arr[j], arr[j + 1]);
+                utils::swap(arr[j], arr[j + 1]);
                 swapped = true;
             }
         }

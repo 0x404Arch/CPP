@@ -1,6 +1,3 @@
-#include <iostream>
-#include "maths.hpp"
-
 using namespace std;
 
 // Count all digits of a number
