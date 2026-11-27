@@ -1,4 +1,4 @@
-#include "common/utils.hpp"
+#include "utils/swap_utils.hpp"
 
 #include <vector>
 
@@ -11,7 +11,7 @@ void reverseString(vector<char> &s) {
 
     while (i < j)
     {
-        Utils::swap(s[i], s[j]);
+        utils::swap(s[i], s[j]);
         i++;
         j--;
     }

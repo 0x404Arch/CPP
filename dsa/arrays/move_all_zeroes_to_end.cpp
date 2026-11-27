@@ -1,4 +1,4 @@
-#include "common/utils.hpp"
+#include "utils/swap_utils.hpp"
 
 void move_all_zeroes(int arr[], int n) {
     int pos = 0;
@@ -6,7 +6,7 @@ void move_all_zeroes(int arr[], int n) {
     {
         if (arr[i] != 0)
         {
-            Utils::swap(arr[pos], arr[i]);
+            utils::swap(arr[pos], arr[i]);
             pos++;
         }
     }

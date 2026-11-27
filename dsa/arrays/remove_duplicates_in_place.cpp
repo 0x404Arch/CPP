@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "common/utils.hpp"
+#include "utils/array_utils.hpp"
 
 using namespace std;
 
@@ -20,5 +20,5 @@ void remove_duplicates_in_place_from_sorted(int arr[], int n) {
 
     cout << "Unique Array: ";
 
-    Utils::print_arrays(arr, unique_count);
+    utils::print_arrays(arr, unique_count);
 }
