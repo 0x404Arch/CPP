@@ -1,4 +1,3 @@
-#include <iostream>
 #include "maths.hpp"
 
 using namespace std;

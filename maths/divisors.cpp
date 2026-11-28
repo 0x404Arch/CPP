@@ -1,6 +1,6 @@
-#include <iostream>
-#include <bits/stdc++.h> 
 #include "maths.hpp"
+
+#include <vector>
 
 using namespace std;
 

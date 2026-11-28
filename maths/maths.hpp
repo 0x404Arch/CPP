@@ -1,4 +1,5 @@
 #pragma once
+
 #include <vector>
 
 // Count all digits of a number
