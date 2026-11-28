@@ -15,7 +15,6 @@ Pattern 9: Half Diamond
 */
 
 #include <iostream>
-#include "patterns.hpp"
 
 using namespace std;
 

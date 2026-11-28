@@ -11,7 +11,6 @@ Pattern 6: Star Pyramid
 */
 
 #include <iostream>
-#include "patterns.hpp"
 
 using namespace std;
 

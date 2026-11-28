@@ -12,7 +12,6 @@ Pattern 11: Number Palindrome Triangle
 */
 
 #include <iostream>
-#include "patterns.hpp"
 
 using namespace std;
 

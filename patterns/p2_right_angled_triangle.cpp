@@ -11,7 +11,6 @@ Pattern 2: Right-Angled Triangle
 */
 
 #include <iostream>
-#include "patterns.hpp"
 
 using namespace std;
 

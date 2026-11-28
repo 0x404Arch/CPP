@@ -11,7 +11,6 @@ Pattern 4: Inverted Right Pyramid
 */
 
 #include <iostream>
-#include "patterns.hpp"
 
 using namespace std;
 

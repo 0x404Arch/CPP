@@ -11,7 +11,6 @@ Pattern 3A: Right-Angled Number Pyramid - I
 */
 
 #include <iostream>
-#include "patterns.hpp"
 
 using namespace std;
 

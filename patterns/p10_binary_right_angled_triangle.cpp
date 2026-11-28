@@ -17,7 +17,6 @@ core logic: (i + j) % 2
 */
 
 #include <iostream>
-#include "patterns.hpp"
 
 using namespace std;
 

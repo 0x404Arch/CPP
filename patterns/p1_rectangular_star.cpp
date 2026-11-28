@@ -9,8 +9,9 @@ Pattern 1: Rectangular Star
 
 */
 
-#include <iostream>
 #include "patterns.hpp"
+
+#include <iostream>
 
 using namespace std;
 
