@@ -31,6 +31,7 @@ So nums is rearranged to [1,-1].
 
 
 #include <vector>
+
 using namespace std;
 
 vector<int> rearrangeArray(vector<int> &nums)

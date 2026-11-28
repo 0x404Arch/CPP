@@ -21,6 +21,7 @@ Output: [1,1]
 */
 
 #include <vector>
+
 using namespace std;
 
 vector<int> getRow(int rowIndex) {
