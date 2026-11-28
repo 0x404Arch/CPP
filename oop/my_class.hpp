@@ -1,5 +1,6 @@
-#include <iostream>
-#include <string.h>
+#pragma once
+
+#include <string>
 #include <vector>
 
 // Class declaration
